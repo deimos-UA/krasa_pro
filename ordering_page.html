@@ -1,0 +1,237 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+
+    <title>Оформление заказа</title>
+</head>
+<body>
+<div class="main">
+    <header>
+        <div class="header_ordering_wrapper">
+             <div class="content">
+                <div class="header_ordering">
+                    <a href="#" onclick="history.back();return false;" class="back_link">Вернуться к покупкам</a>
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <a class="header_phone" href="tel: +38 (050) 599-00-92">+38 (050) 599-00-92</a>
+                </div>
+             </div>
+        </div>
+    </header>
+    <div class="main_content_wrapper ordering_page">
+        <div class="content_ordering">
+            <p class="page_heading">Оформление заказа</p>
+            <div class="ordering_content_wrapper">
+                <div class="ordering_info_wrapper">
+                    <form class="ordering_info form_style">
+                        <p class="ordering_step">1.Личные данные</p>
+                        <div class="ordering_form_heading">
+                            <p class="new_user_ordering active">Новый покупатель</p>
+                            <p class="regular_user_ordering">Постоянный клиент</p>
+                        </div>
+                        <div class="login_social_ordering">
+                            <p>Войти как пользователь:</p>
+                            <a href="#"><img src="images/facebook_ordering.png" alt="facebook"></a>
+                            <a href="#"><img src="images/google_ordering.png" alt="google+"></a>
+                        </div>
+                        <label class="new_user_form required" for="order_fio">ФИО</label>
+                        <input class="new_user_form" type="text" required id="order_fio">
+                        <label class="new_user_form required" for="order_phone">Телефон</label>
+                        <input class="new_user_form"  type="tel" required id="order_phone">
+                        <label class="new_user_form required" for="order_mail">E-mail</label>
+                        <input class="new_user_form"  type="email" required id="order_mail">
+
+
+
+
+                        <label class="regular_user_form required hide" for="current_mail">E-mail</label>
+                        <input class="regular_user_form hide" id="current_mail" type="email">
+                        <label class="regular_user_form required hide" for="current_password">Пароль</label>
+                        <input class="regular_user_form hide" id="current_password" type="password">
+                        <button class="action_btn regular_user_form hide" type="submit">Войти</button>
+
+
+                        <p class="ordering_step">2. Способы доставки</p>
+                        <label class="delivery_form">Методы доставки:
+                            <select>
+                                <option selected>Отделение «Новая почта»</option>
+                                <option>Доставка на дом</option>
+                                <option>Отделение «Укр Почта»</option>
+                            </select>
+                        </label>
+                        <label class="delivery_form">Область:
+                            <select>
+                                <option selected>Харьковская</option>
+                                <option>Киевская</option>
+                                <option>Одесская</option>
+                            </select>
+                        </label>
+                        <label class="delivery_form">Город:
+                            <select>
+                                <option selected>Харьков</option>
+                                <option>Купянск</option>
+                                <option>Чугуев</option>
+                            </select>
+                        </label>
+                        <label class="delivery_form">Отделение:
+                            <select>
+                                <option disabled selected>Выберите отделение</option>
+                                <option>Отделение «Новая почта»1</option>
+                                <option>Отделение «Новая почта»2</option>
+                            </select>
+                        </label>
+                        <p class="ordering_step">3. Способы оплаты</p>
+                        <label class="payment_form">Метод оплаты:
+                            <select>
+                                <option selected>Наложенным платежом (При получении)</option>
+                                <option>Наложенным платежом (При получении)</option>
+                                <option>Наложенным платежом (При получении)</option>
+                            </select>
+                        </label>
+                        <label class="payment_form" for="textarea_order">Добавить комментарий к заказу:</label>
+                        <textarea id="textarea_order"></textarea>
+                        <button class="action_btn confirm_order">Подтвердить заказ</button>
+                        <p class="confirm_text">Оформляя заказ, я принимаю условия <a href="#">пользовательского соглашения</a></p>
+                    </form>
+                </div>
+                <div class="ordering_product_wrapper">
+                    <div class="basket_wrapper">
+                        <div class="basket_header">
+                            <p class="order_basket_heading">Товары в корзине</p>
+                        </div>
+                        <div class="basket_content">
+                            <div class="basket_content_heading">
+                                <p>Количество</p>
+                                <p>Стоимость</p>
+                            </div>
+                            <div class="basket_content_wrapper">
+                                <div class="basket_product_wrapper">
+                                    <div class="basket_product">
+                                        <div class="basket_product_info">
+                                            <a href="product_card.html"><img src="images/basket_product.png" alt="/"></a>
+                                            <div class="basket_product_info_content">
+                                                <p>Lancome Hypnose Volume-а-Porter Тушь для ресниц</p>
+                                                <div class="basket_product_price">
+                                                    <p class="sale_cost">160 грн</p>
+                                                    <p class="actual_cost">160 грн</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basket_product_actions">
+                                            <div class="basket_product_amount">
+                                                <div class="quantity">
+                                                    <div class="inner">
+                                                        <div>
+                                                            <button onclick="$(this).next().val(~~$(this).next().val()-1); update_cart(this, 'update');" id="decrease-quantity">—</button>
+                                                            <input type="text" name="quantity" value="1" onchange="update_cart(this, 'update'); return validate_input(this);" onkeyup="update_cart(this, 'update'); return validate_input(this);" class="input-quantity">
+                                                            <button onclick="$(this).prev().val(~~$(this).prev().val()+1); update_cart(this, 'update');" id="increase-quantity">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="basket_product_cost">
+                                                <p class="actual_cost">160 грн</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket_product">
+                                        <div class="basket_product_info">
+                                            <a href="product_card.html"><img src="images/basket_product_2.png" alt="/"></a>
+                                            <div class="basket_product_info_content">
+                                                <p>Lancome Hypnose Volume-а-Porter Тушь для ресниц</p>
+                                                <div class="basket_product_price">
+                                                    <p class="sale_cost">160 грн</p>
+                                                    <p class="actual_cost">160 грн</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="basket_product_actions">
+                                            <div class="basket_product_amount">
+                                                <div class="quantity">
+                                                    <div class="inner">
+                                                        <div>
+                                                            <button onclick="$(this).next().val(~~$(this).next().val()-1); update_cart(this, 'update');" id="decrease-quantity2">—</button>
+                                                            <input type="text" name="quantity" value="1" onchange="update_cart(this, 'update'); return validate_input(this);" onkeyup="update_cart(this, 'update'); return validate_input(this);" class="input-quantity">
+                                                            <button onclick="$(this).prev().val(~~$(this).prev().val()+1); update_cart(this, 'update');" id="increase-quantity2">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="basket_product_cost">
+                                                <p class="actual_cost">160 грн</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket_promo_wrapper">
+                                    <p>У меня есть промокод</p>
+                                    <div class="basket_promo">
+                                        <form>
+                                            <label>
+                                                <input type="text" placeholder="Введите промокод">
+                                            </label>
+                                            <button type="submit">Применить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="basket_total_cost_wrapper">
+                                    <div class="basket_cost_sum">
+                                        <p>2 товара на сумму:</p>
+                                        <span>360 грн</span>
+                                    </div>
+                                    <div class="basket_sale">
+                                        <p>Скидка:</p>
+                                        <span>-120 грн</span>
+                                    </div>
+                                    <div class="basket_delivery_cost">
+                                        <p>Стоимость доставки:</p>
+                                        <span>65 грн</span>
+                                    </div>
+                                    <div class="basket_total_cost">
+                                        <p>Итого к оплате:</p>
+                                        <span>305 грн</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_back hide"></div>
+    <div class="cookie_wrapper">
+        <div class="cookie_content">
+            <p>Продолжая использовать сайт, Вы даете свое согласие на использование cookie для хранения данных.</p>
+            <button class="close_modal cookie_modal"></button>
+        </div>
+        <div class="cookie_confirm">
+            <button class="agree_cookie">Принимаю</button>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<script rel="script" src="js/jQuery.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script rel="script" src="js/script.js"></script>
+</body>
+</html>
