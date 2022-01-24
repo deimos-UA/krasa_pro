@@ -564,6 +564,150 @@ header .header_mobile_menu{
     border-radius: 30px;
 }
 
+.modal_window.login_wrapper.hide{
+    display: none;
+}
+
+
+.modal_window.login_wrapper{
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 50px;
+    border-radius: 0;
+    max-width: 900px;
+}
+
+.login_form_modal_wrapper{
+    border-right: 1px solid #DFE3EA;
+    padding-right: 50px;
+    width: 50%;
+}
+
+.login_wrapper .close_modal{
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+
+.h3_heading{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.login_wrapper .h3_heading{
+    margin-bottom: 20px;
+}
+
+.login_social_modal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.login_social_modal p{
+    margin-right: 12px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.login_social_modal a{
+    margin-right: 12px;
+}
+
+.login_social_modal a:last-child{
+    margin-right: 0;
+}
+
+.underline_btn{
+    margin-left: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #262931;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.for_unregistered_modal{
+    padding-left: 50px;
+}
+
+.for_unregistered_modal span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.for_unregistered_modal ul{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+li.in_stock{
+    color: #262931;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.for_unregistered_modal ul li.in_stock:before{
+    filter: invert(38%) sepia(90%) saturate(380%) hue-rotate(263deg) brightness(89%) contrast(90%);
+    width: 12px;
+    height: 9px;
+    background-size: 100%;
+}
+
+.for_unregistered_modal .second_action_button{
+    margin-left: 0;
+    max-width: 220px;
+    min-height: 40px;
+    color: #262931;
+    cursor: pointer;
+}
+
+.modal_window.forgot_pass.hide {
+    display: none;
+}
+
+.modal_window.forgot_pass{
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #FFFFFF;
+    border-radius: 0;
+}
+
+.forgot_pass span{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #818690;
+}
+
+.forgot_pass form input{
+    min-width: 320px;
+}
+
+
+.forgot_pass .close_modal{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+
+}
+
+
+
 
 
 
@@ -815,7 +959,6 @@ header .header_mobile_menu{
     line-height: 17px;
     position: relative;
     border: none;
-    outline: none;
     cursor: pointer;
     padding: 15px 40px;
 }
@@ -2652,7 +2795,7 @@ a.pagi_after, .pagi_after, a.pagi_before, .pagi_before{
     width: 300px;
 }
 
-.basket_promo form button{
+.second_action_button{
     background: #ffffff;
     border: 1px solid #AE5096;
     text-align: center;

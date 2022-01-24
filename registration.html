@@ -187,7 +187,51 @@
             </div>
         </div>
     </div>
-    <div class="modal_back hide"></div>
+    <div class="modal_back <!--hide-->"></div>
+    <div class="modal_window login_wrapper hide">
+        <div class="login_form_modal_wrapper">
+            <p class="h3_heading">Вход в личный кабинет</p>
+            <div class="login_social_modal">
+                <p>Вход в один клик</p>
+                <a href="#"><img src="images/facebook_ordering.png" alt="facebook"></a>
+                <a href="#"><img src="images/google_ordering.png" alt="google+"></a>
+            </div>
+            <form class="login_form_modal form_style">
+                <label for="login_email">E-mail</label>
+                <input type="email" id="login_email" required>
+                <label for="login_password">Пароль</label>
+                <input type="password" id="login_password" required>
+                <div class="login_modal_confirm">
+                    <button class="action_btn">Войти</button>
+                    <button class="forgot_pass underline_btn">Забыли пароль?</button>
+                </div>
+            </form>
+        </div>
+        <div class="for_unregistered_modal">
+            <p class="h3_heading">Еще не зарегистрированы?</p>
+            <span>Преимущества зарегистрированных пользователей</span>
+            <ul>
+                <li class="in_stock">Получение информации о новинках и акциях</li>
+                <li class="in_stock">Бонусы постоянным покупателям</li>
+                <li class="in_stock">Просмотр истории заказов в личном кабинете</li>
+            </ul>
+            <button class="second_action_button">Зарегистрироваться</button>
+        </div>
+
+    </div>
+    <div class="modal_window forgot_pass">
+        <p class="h3_heading">Восстановление пароля</p>
+        <span>Введите свой email и мы вышлем Вам пароль</span>
+        <form class="form_style">
+            <label for="email_forgot">E-mail</label>
+            <input type="email" id="email_forgot">
+            <div class="forgot_pass_actions">
+                <button class="action_btn" type="submit">Войти</button>
+                <button class="remember_pass underline_btn">Я вспомнил пароль</button>
+            </div>
+        </form>
+        <button class="close_modal"></button>
+    </div>
     <footer>
         <div class="footer_main content">
             <div class="footer_catalog">
