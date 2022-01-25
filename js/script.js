@@ -484,7 +484,7 @@ $( document ).ready(function() {
         let faq_btn = $(this).find('.faq_drop_btn');
         let faq_content = $('.faq_drop_content[id="' + faq_head + '"]');
         faq_content.slideToggle(300).toggleClass('hide');
-        faq_btn.toggleClass('drop_btn');
+        faq_btn.toggleClass('no_drop_btn');
 
     });
 

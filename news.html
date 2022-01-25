@@ -2,9 +2,362 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+
+    <title>Новости</title>
 </head>
 <body>
+<div class="main">
+    <header>
+        <div class="header_top">
+            <div class="header_top_info">
+                <p>Бесплатная доставка от 699 грн</p>
+            </div>
+            <div class="header_menu_wrapper">
+                <div class="content">
+                    <div class="header_menu">
+                        <a href="#">О магазине</a>
+                        <a href="#">Новости</a>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Программа лояльности</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                    <div class="header_menu_actions">
+                        <a class="header_phone" href="tel: +38 (050) 599-00-92">+38 (050) 599-00-92</a>
+                        <form class="header_lang">
+                            <label>
+                                <select>
+                                    <option selected>Рус</option>
+                                    <option>Укр</option>
+                                </select>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_main_wrapper content">
+            <div class="header_main">
+                <button class="ham_btn"></button>
+                <div class="header_logo">
+                    <a href="index.html"><img src="images/logo.png" alt="/"></a>
+                </div>
+                <div class="header_content">
+                    <div class="header_search search_field" id="search">
+                        <form>
+                            <input type="text" name="search" placeholder="Ищите духи, косметику, бренды..." >
+                            <label for="search" class="search__label"></label>
+                            <button type="button" class="search_btn"></button>
+                        </form>
+                    </div>
+                    <div class="header_main_actions">
+                        <button class="header_actions_btn profile_btn">
+                            Профиль
+                        </button>
+                        <button class="header_actions_btn favorites_btn">
+                            Мои желание
+                        </button>
+                        <button class="header_actions_btn basket_btn">
+                            <span class="header_btn_value">0</span>
+                            Корзина
+                        </button>
 
+                    </div>
+                </div>
+            </div>
+            <div class="header_category">
+                <a href="#">Парфюмерия</a>
+                <a href="#">Макияж</a>
+                <a href="#">Волосы</a>
+                <a href="#">Парфюмерия</a>
+                <a href="#">Макияж</a>
+                <a href="#">Волосы</a>
+                <a href="#">Парфюмерия</a>
+                <a href="#">Макияж</a>
+                <a href="#">Волосы</a>
+            </div>
+        </div>
+
+
+        <div class="header_mobile_menu hide">
+            <div class="header_menu_content_wrapper">
+                <div class="header_menu_heading_wrapper">
+                    <div class="header_menu_heading">
+                        <p>Меню</p>
+                        <button class="close_menu"></button>
+                    </div>
+                    <div class="header_menu_login">
+                        <div class="header_login">
+                            <button class="header_actions_btn profile_btn">
+                                Профиль
+                            </button>
+                            <button class="header_actions_btn favorites_btn">
+                                Мои желание
+                            </button>
+                        </div>
+                        <form class="header_lang">
+                            <label>
+                                <select>
+                                    <option selected>Рус</option>
+                                    <option>Укр</option>
+                                </select>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="header_menu_content">
+                    <div class="header_menu_category">
+                        <ul>
+                            <li><a href="#">Парфюмерия</a></li>
+                            <li><a href="#">Макияж</a></li>
+                            <li><a href="#">Волосы</a></li>
+                            <li><a href="#">Парфюмерия</a></li>
+                            <li><a href="#">Макияж</a></li>
+                            <li><a href="#">Волосы</a></li>
+                            <li><a href="#">Парфюмерия</a></li>
+                            <li><a href="#">Макияж</a></li>
+                            <li><a href="#">Волосы</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_menu_following">
+                        <div class="header_top_links">
+                            <a href="about_page.html">О магазине</a>
+                            <a href="news.html">Новости</a>
+                            <a href="delivery_payment.html">Доставка и оплата</a>
+                            <a href="#">Программа лояльности</a>
+                            <a href="contact_page.html">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_menu_phones">
+                <a href="tel:+38 (050) 599-00-92">+38 (050) 599-00-92</a>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="main_content_wrapper">
+        <div class="breadcrumb_page_wrapper">
+            <div class="content">
+                <div class="breadcrumb_wrapper">
+                    <ul>
+                        <li class="crumb_links main_link"><a href="index.html">Главная</a></li>
+                        <li class="crumb_links current"><a href="news.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="news_page_wrapper content">
+            <div class="news_page_heading">
+                <p class="h1_heading">Новости</p>
+            </div>
+            <div class="news_page_content">
+                <div class="news_card">
+                    <img src="images/news_1.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Как избавиться от жирности волос: уход и укрепление</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="news_card">
+                    <img src="images/news_2.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Твой идеальный праймер для безупречного тона лица</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="news_card">
+                    <img src="images/news_3.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Уход за губами: правила и этапы ухода за кожей губ</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="news_card">
+                    <img src="images/news_4.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Как избавиться от жирности волос: уход и укрепление</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="news_card">
+                    <img src="images/news_5.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Твой идеальный праймер для безупречного тона лица</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="news_card">
+                    <img src="images/news_6.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Уход за губами: правила и этапы ухода за кожей губ</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="news_card">
+                    <img src="images/news_7.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Как избавиться от жирности волос: уход и укрепление</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="news_card">
+                    <img src="images/news_8.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Твой идеальный праймер для безупречного тона лица</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="news_card">
+                    <img src="images/news_9.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Уход за губами: правила и этапы ухода за кожей губ</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="news_card">
+                    <img src="images/news_1.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Как избавиться от жирности волос: уход и укрепление</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="news_card">
+                    <img src="images/news_2.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Твой идеальный праймер для безупречного тона лица</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="news_card">
+                    <img src="images/news_3.png" alt="/">
+                    <div class="news_card_content">
+                        <p class="news_heading">Уход за губами: правила и этапы ухода за кожей губ</p>
+                        <p class="news_short">В статье описаны основные способы ухода за жирными волосами: причины жирности, шампуни для жирных волос и народные рецепты</p>
+                        <a href="news_card.html">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination_wrapper">
+                <a href="#" class="pagi_before no_active"></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">9</a>
+                <a href="#" class="pagi_after"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal_back hide"></div>
+    <footer>
+        <div class="footer_main content">
+            <div class="footer_catalog">
+                <div class="footer_heading">
+                    <p>Каталог</p>
+                    <button data-menu-toggle="foot_menu_1" class="show_menu"></button>
+                </div>
+                <div id="foot_menu_1" class="footer_nav_list catalog_footer_list">
+                    <ul class="footer_list">
+                        <li><a href="#">Пробники</a></li>
+                        <li><a href="#">Уход за лицом</a></li>
+                        <li><a href="#">Для губ</a></li>
+                        <li><a href="#">Макияж</a></li>
+                        <li><a href="#">Уход за волосами</a></li>
+                    </ul>
+                    <ul class="footer_list">
+                        <li><a href="#">Уход за телом</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                        <li><a href="#">Наборы</a></li>
+                        <li><a href="#">Подарочные сертификаты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_menu">
+                <div class="footer_heading">
+                    <p>Помощь</p>
+                    <button data-menu-toggle="foot_menu_2" class="show_menu"></button>
+                </div>
+                <ul id="foot_menu_2" class="footer_nav_list footer_list">
+                    <li><a href="#">О магазине</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Программа лояльности</a></li>
+                </ul>
+            </div>
+            <div class="footer_contacts_wrapper">
+                <div class="footer_heading">
+                    <p>Контакты</p>
+                    <button data-menu-toggle="foot_menu_3" class="show_menu"></button>
+                </div>
+                <div id="foot_menu_3" class="footer_nav_list footer_contacts">
+                    <div class="footer_contacts_content">
+                        <p>По вопросу заказов:</p>
+                        <a class="tel_link" href="tel: +38 (093) 067-36-13">+38 (093) 067-36-13</a>
+                        <a class="tel_link" href="tel: +38 (093) 067-36-13">+38 (093) 067-36-13</a>
+                        <a class="mail_link" href="mailto: SupermarketKrasy@gmail.com">SupermarketKrasy@gmail.com</a>
+                    </div>
+                    <div class="footer_schedule">
+                        <p>График работы:</p>
+                        <p>Пн–Пт 10:00–17:00 Сб–Вс Выходной</p>
+                        <div class="social_links">
+                            <a href="#"><img src="images/facebook_logo.png" alt="/"></a>
+                            <a href="#"><img src="images/insta_logo.png" alt="/"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom_info">
+            <div class="content">
+                <div class="copyright_wrapper">
+                    <p>© Supermarket Krasy <span>2021</span> – магазин косметики</p>
+                </div>
+                <div class="promodex">
+                    <p>Разработка</p>
+                    <a href="https://promodex.net/"><img src="images/promodex.png" alt="/"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script rel="script" src="js/jQuery.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script rel="script" src="js/script.js"></script>
 </body>
 </html>

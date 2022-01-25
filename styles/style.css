@@ -1766,7 +1766,7 @@ footer{
 
 .pagination_wrapper a.active{
     color: #ffffff;
-    background: #C37DB1;
+    background: #AE5096;
 }
 
 
@@ -3009,6 +3009,7 @@ a.pagi_after, .pagi_after, a.pagi_before, .pagi_before{
     background: #AE5096;
     cursor: pointer;
     position: relative;
+    transition: all .3s ease-in-out;
 }
 
 .faq_drop_btn:before{
@@ -3020,6 +3021,7 @@ a.pagi_after, .pagi_after, a.pagi_before, .pagi_before{
     top: 50%;
     left: 50%;
     transform: translate(-70%, -50%);
+    transition: all .3s ease-in-out;
 }
 
 .faq_drop_content{
@@ -3081,11 +3083,111 @@ a.pagi_after, .pagi_after, a.pagi_before, .pagi_before{
     color: #262931;
 }
 
-.drop_btn{
-    position: unset;
+.faq_drop_btn.no_drop_btn:before{
+    display: none;
+    transition: all .3s ease-in-out;
 }
 
 
+/*////////////////news_page///////////////////////*/
+
+
+.news_page_wrapper{
+    margin-top: 40px;
+}
+
+.news_page_heading{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+
+.news_page_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.news_card {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    margin-bottom: 60px;
+}
+
+.news_card .news_card_content{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.news_heading{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 10px;
+}
+
+.news_short{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #818690;
+    margin-bottom: 10px;
+}
+
+.news_card_content a{
+    display: block;
+    position: relative;
+    padding-right: 20px;
+    color: #AE5096;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    border-bottom: 1px solid transparent;
+}
+
+.news_card_content a:after{
+    content: '>';
+    color: #AE5096;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.news_card_content a:hover{
+    border-bottom: 1px solid #AE5096;
+}
+
+.news_card img{
+    transition: all .3s ease-in-out;
+}
+
+.news_card img:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////*/
 /*///////////////////////////////////////*/
 
 
