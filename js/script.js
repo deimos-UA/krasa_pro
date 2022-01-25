@@ -478,6 +478,18 @@ $( document ).ready(function() {
     });
 
 
+    $('.faq_drop_head').click(function(event) {
+        event.preventDefault();
+        let faq_head = $(this).attr('data-drop-toggle');
+        let faq_btn = $(this).find('.faq_drop_btn');
+        let faq_content = $('.faq_drop_content[id="' + faq_head + '"]');
+        faq_content.slideToggle(300).toggleClass('hide');
+        faq_btn.toggleClass('drop_btn');
+
+    });
+
+
+
 
 
 });

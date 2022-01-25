@@ -2962,15 +2962,128 @@ a.pagi_after, .pagi_after, a.pagi_before, .pagi_before{
     width: 100%;
     text-align: left;
 }
+/*///////////////////faq_page/////////////////////////*/
 
+.faq_page_content_wrapper .faq_page_heading{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
 
+.faq_page_content_wrapper{
+    width: 75%;
+}
+.faq_drop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+    border-bottom: 1px solid #C8D5E1;
+}
 
+.faq_card_wrapper .faq_drop:first-child{
+    border-top: 1px solid #C8D5E1;
 
+}
 
-/*////////////////////////////////////////////*/
+.faq_drop_head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
 
+.faq_drop_head p{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #262931;
+}
 
+.faq_drop_btn{
+    border: none;
+    height: 3px;
+    width: 17px;
+    background: #AE5096;
+    cursor: pointer;
+    position: relative;
+}
 
+.faq_drop_btn:before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 17px;
+    background: #AE5096;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+}
+
+.faq_drop_content{
+    padding: 30px 0 10px 0;
+}
+
+.faq_drop_content p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.faq_page_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faq_page_aside_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.faq_aside_card{
+    width: 220px;
+    min-height: 127px;
+    background: #fff4fd;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.faq_mail_card:after{
+    content: '';
+    position: absolute;
+    background: url("../images/mail_card.svg") center center no-repeat;
+    width: 78px;
+    height: 66px;
+    bottom: 0;
+    right: 0;
+}
+
+.faq_phone_card:after{
+    content: '';
+    position: absolute;
+    background: url("../images/phone_card.svg") center center no-repeat;
+    width: 78px;
+    height: 66px;
+    bottom: 0;
+    right: 0;
+}
+
+.faq_aside_card p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #262931;
+}
+
+.drop_btn{
+    position: unset;
+}
 
 
 /*///////////////////////////////////////*/
