@@ -3748,7 +3748,6 @@ a.pagi_after, .pagi_after, a.pagi_before, .pagi_before{
 
     .cookie_wrapper{
         max-width: 100%;
-        width: 100%;
         bottom: 0;
         right: 0;
     }
